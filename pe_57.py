@@ -1,0 +1,3 @@
+def digit_sum(i,j) :
+    return sum(map(int , str(i**j)))
+print(max([digit_sum(i,j) for i in range(1,101) for j in range(1,i+1)]))
